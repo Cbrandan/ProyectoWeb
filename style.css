@@ -7,16 +7,26 @@
     border: solid white 1px;
     padding:10px;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);    
+}
+
+#secDatosPersonales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .divDatosPersonales{
     border-radius: 5px;
-    border: solid aquamarine 1px;
+    /*border: solid aquamarine 1px;*/
     background-color:rgb(248, 237, 227);
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     width: 100%;
     margin:5px;
+}
+
+.pDatosPersonales{
+    color: darkblue;
 }
 
 h3{
@@ -60,3 +70,49 @@ h3{
     width: 55%;
     margin-left:auto;
 }
+
+@media screen and (max-width: 998px){
+    /*FlexBOXs: display, flex-direction, justify-content*/
+    
+    #secDatosPersonales{
+        display: flex; /* block, inline-block, none*/
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgPerfil{
+        width: 35%;
+    }
+
+    .divDatosPersonales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ulExperiencia{
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+    }
+
+    footer{
+        align-content: center;
+    }
+
+    ul{
+
+    }
+}
+
+@media screen and (max-width: 390px){
+    .divDatosPersonales{
+        display: none;
+    }
+}
+
+
+/*BoxModel: Modelos de cajas
+  FlexBOX:  La version Float en donde determinados div flotaran
+  CSS Grid: Complemento de CSS que permite jugar con las disposiciones y armar contenido con */
