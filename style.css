@@ -1,19 +1,61 @@
+body{
+    background-color: lightslategrey;
+    margin: 0px;
+}
+
+header{
+    background-color: lightslategrey;
+    height: 50px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer{
+    background-color:dimgray;
+    height: 120px;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+.divRedes{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.lstRedes{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+li{
+    display: inline;
+}
+
 .imgPerfil{
     border-radius: 50%;
     width: 200px;
+    margin: 20px;
 }
 
 .borde{
     border: solid white 1px;
     padding:10px;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);    
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 #secDatosPersonales{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 20px;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
 }
 
 .divDatosPersonales{
@@ -46,7 +88,9 @@ h3{
     margin:40px;
     width: 320px;
     height: 200px;
-    background-color:bisque
+    background-color:bisque;
+    border-radius: 10px;
+
 }
 
 .divExperienciaImage{
@@ -67,8 +111,16 @@ h3{
 }
 
 .divExperienciaData{
-    width: 55%;
-    margin-left:auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+h4,
+h5{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 998px){
@@ -80,10 +132,10 @@ h3{
         align-items: center;
     }
 
-    .imgPerfil{
+ /*   .imgPerfil{
         width: 35%;
     }
-
+*/
     .divDatosPersonales{
         display: flex;
         flex-direction: column;
