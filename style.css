@@ -11,13 +11,12 @@ header{
     top: 0;
     text-align: center;
     text-transform: uppercase;
+    z-index: 100 !important;
 }
 
 .head{
     font-family: 'Courier New', Courier, monospace;
-    z-index: 100 !important;
 }
-
 
 footer{
     background-color:dimgray;
@@ -26,6 +25,7 @@ footer{
     position: sticky;
     bottom: 0;
     text-align: center;
+    z-index: 100 !important;
 }
 
 .secTitle{
@@ -47,10 +47,12 @@ footer{
     text-align: center;
 }
 
-
-
 li{
     display: inline;
+}
+
+i:hover{
+    color: thistle;
 }
 
 .imgPerfil{
@@ -90,6 +92,10 @@ h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
+h3:hover{
+    color: white;
+}
+
 .ulExperiencia{
     display: flex;
     flex-direction: row;
@@ -104,7 +110,6 @@ h3{
     height: 200px;
     background-color: slategray;
     border-radius: 10px;
-
 }
 
 .divExperienciaImage{
@@ -172,18 +177,8 @@ h5{
         align-content: center;
     }
 
-    ul{
-
-    }
-}
-
 @media screen and (max-width: 390px){
     .divDatosPersonales{
         display: none;
     }
 }
-
-
-/*BoxModel: Modelos de cajas
-  FlexBOX:  La version Float en donde determinados div flotaran
-  CSS Grid: Complemento de CSS que permite jugar con las disposiciones y armar contenido con */
